@@ -41,7 +41,7 @@ new Vue({
 
 Vue.component('blog-post3', {
     props: ['title', 'post'],
-    template: '<div class="blog-post3"><h3>{{title}}</h3><div v-html="post.content"></div>'
+    template: '<div class="blog-post3"><h3>{{title}}</h3><div v-html="post.content"></div></div>'
   
 })
 

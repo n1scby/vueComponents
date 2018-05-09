@@ -20,12 +20,12 @@
 
 
     <div id="posts2">
-        <blog-post v-for="post in posts" v-bind:title="post.title"></blog-post>
+        <blog-post v-for="post in posts" :key="post.id" v-bind:title="post.title"></blog-post>
     </div>
 
 
     <div id="posts3">
-        <blog-post3 v-for="post in posts3" v-bind:title="post.title" v-bind:post="post"></blog-post3>
+        <blog-post3 v-for="post in posts3" :key="post.id" v-bind:title="post.title" v-bind:post="post"></blog-post3>
     </div>
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
