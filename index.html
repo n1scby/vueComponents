@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue Components</title>
+</head>
+<body>
+    <div id="component-button">
+        <button-counter></button-counter>
+        <button-counter></button-counter>
+    </div>
+
+    <div id="posts1">
+        <blog-post title="Post 1"></blog-post>
+        <blog-post title="Post 2"></blog-post>
+        <blog-post title="Post 3"></blog-post>
+    </div>
+
+
+    <div id="posts2">
+        <blog-post v-for="post in posts" v-bind:title="post.title"></blog-post>
+    </div>
+
+
+    <div id="posts3">
+        <blog-post3 v-for="post in posts3" v-bind:title="post.title" v-bind:post="post"></blog-post3>
+    </div>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="components.js"></script>
+</body>
+</html>
