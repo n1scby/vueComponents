@@ -73,10 +73,19 @@ new Vue({
 
 
 Vue.component('show-div', {
-  props: ['title', 'content'],
   template: `
-          <div><h3>Title: {{title}}</h3></p>{{content}}</p></div>
-            `
+          <div class="m-5">
+          <h3>Title: {{title}}</h3>
+          </p>{{content}}</p> 
+          <button class="btn btn-secondary" @click="$emit('close')">Close Div</button>
+          </div>
+            `,
+  data() {
+    return {
+      title: 'This is the Title',
+      content: 'This is some div content.  Yahoo!  Super cool.'
+    }
+  }
 })
 
 new Vue({

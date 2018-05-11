@@ -23,10 +23,24 @@
         </div>
 
 
-        <div id="show-div">
-            <show-div v-show="showDiv"></show-div>
+        <div id="show-div" class="m-5">
+            <show-div v-show="showDiv" @close="showDiv = false"></show-div>
             <button v-on:click="showDiv = true">Show Div</button>
         </div>
+
+
+        <div> id="tabs" class="m-5"</div>
+        <tabs>
+            <tab name="About Us" :selected="true">
+                <h1>Here is the content for the about us tab</h1>
+            </tab>
+            <tab name="About our Culture">
+                <h1>He is the content about our culture</h1>
+            </tab>
+            <tab name="About Our Vision">
+                <h1>Here is the content about our vision</h1>
+            </tab>
+        </tabs>
 
     
    <!-- development version, includes helpful console warnings -->
