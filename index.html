@@ -7,6 +7,11 @@
     <title>Vue Components</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="component2.html">Component 2</a></li>
+        </ul>
+    </nav>
     <div id="component-button">
         <button-counter></button-counter>
         <button-counter></button-counter>
@@ -27,6 +32,37 @@
     <div id="posts3">
         <blog-post3 v-for="post in posts3" :key="post.id" v-bind:title="post.title" v-bind:post="post"></blog-post3>
     </div>
+
+
+    <div>
+    <hr/>
+    </div>
+
+    <div id="task1">
+        <h2>Task List 1</h2>
+        <task1></task1>
+        <task1></task1>
+        <task1></task1>
+    </div>
+
+    <div id="task2">
+            <h2>Task List 2 - Slot</h2>
+            <task2>Task 1</task2>
+            <task2>Task 2</task2>
+            <task2>Task 3</task2>
+    </div>
+
+    <div id="task3">
+        <h2>Task List 3 - data in function</h2>
+        <task3></task3>
+    </div>
+
+
+    <div id="tasks1">
+        <h2>Task List with Tasks 1</h2>
+        <task-list1></task-list1>
+    </div>
+
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="components.js"></script>
